@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionswithArrays", "FunctionswithArrays\FunctionswithArrays.csproj", "{2592406F-9048-4046-B34B-BCBC8337ADC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionswithArrays", "FunctionswithArrays\FunctionswithArrays.csproj", "{2592406F-9048-4046-B34B-BCBC8337ADC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionsReturns", "FunctionsReturns\FunctionsReturns.csproj", "{0058A079-0DA7-46E4-A8F4-96938E4A035B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionsReturns", "FunctionsReturns\FunctionsReturns.csproj", "{0058A079-0DA7-46E4-A8F4-96938E4A035B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfArrayElements", "SumOfArrayElements\SumOfArrayElements.csproj", "{8C1077D6-8CD2-4B62-9D5E-01D5A92CB5AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumOfArrayElements", "SumOfArrayElements\SumOfArrayElements.csproj", "{8C1077D6-8CD2-4B62-9D5E-01D5A92CB5AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpicFight", "EpicFight\EpicFight.csproj", "{A5517ADF-90D7-4F14-95F3-C435D0217009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EpicFight", "EpicFight\EpicFight.csproj", "{A5517ADF-90D7-4F14-95F3-C435D0217009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpicFight2", "EpicFight2\EpicFight2.csproj", "{E161C2E6-ACC8-42DC-9AA3-FC6D7349749A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A5517ADF-90D7-4F14-95F3-C435D0217009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5517ADF-90D7-4F14-95F3-C435D0217009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5517ADF-90D7-4F14-95F3-C435D0217009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E161C2E6-ACC8-42DC-9AA3-FC6D7349749A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E161C2E6-ACC8-42DC-9AA3-FC6D7349749A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E161C2E6-ACC8-42DC-9AA3-FC6D7349749A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E161C2E6-ACC8-42DC-9AA3-FC6D7349749A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

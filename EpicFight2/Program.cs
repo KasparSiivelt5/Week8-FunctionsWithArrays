@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EpicFight
+namespace EpicFight2
 {
     class Program
     {
@@ -8,18 +8,47 @@ namespace EpicFight
         {
             string hero = PickHero();
             string villain = PickVillain();
-            int HeroHP, villainHP;
-            int villainHP = GenerateHP(hero);
+            int heroHP = GenerateHP(hero);
+            int villainHP = GenerateHP(villain);
+
             Console.WriteLine($"{hero} will fight {villain}.");
 
             string heroWeapon = PickWeapon();
             string villainWeapon = PickWeapon();
             Console.WriteLine($"{hero} picked {heroWeapon}. {villain} picked {villainWeapon}.");
+        
+        
+            while(heroHP >0 && villainHP > 0)
+            {
+                heroHP = heroHP - Hit(villain, hero, villainweapon)
+            }        
+        
         }
 
-           private static int Hit (string CharacterOne ,string CharacterTwo ,string someweapon)
+        private static int Hit(string characterOne, string characterTwo, string someWeapon)
+        {
+            Random rnd = new Random();
+            int strike = rnd.Next(0, someWeapon.Length / 2);
 
-        
+            Console.WriteLine($"{characterOne} hit {strike}.");
+            if (strike == someWeapon.Length / 2)
+            {
+                Console.WriteLine($"Awesome! {characterOne} made a critical hit!");
+            }
+            else if (strike == 0)
+            {
+                Console.WriteLine($"{characterTwo} dodged the attack!");
+            }
+
+        }
+
+        private static int GenerateHP(string someName)
+        {
+            Random rnd = new Random();
+            return rnd.Next(someName.Length, someName.Length + 10);
+        }
+
+        private static string PickWeapon()
         {
             string[] weapon = { "plastic fork", "banana", "frying pan", "purse", "flip-flop" };
             Random rnd = new Random();
@@ -32,7 +61,7 @@ namespace EpicFight
         {
             string[] superHeroes = { "Luke Skywalker", "Batman", "Spiderman", "Patric", "Lara Croft" };
             Random rnd = new Random();
-            int randomIndex = rnd.Next(0, somename.Length +10);
+            int randomIndex = rnd.Next(0, superHeroes.Length);
 
             return superHeroes[randomIndex];
         }
@@ -44,7 +73,7 @@ namespace EpicFight
             int randomIndex = rnd.Next(0, villains.Length);
 
             return villains[randomIndex];
-        }
 
-    }
+
+         }
 }
